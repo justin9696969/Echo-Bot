@@ -7874,48 +7874,48 @@ def handle_message(event):
         
          # Buttons Template
         elif text in {'天氣預報'}:
-            url = request.url_root + '/static'
+            url = request.url_root + '/static2'
             url = url.replace("http://", "https://")
             app.logger.info("url=" + url)
             image_carousel_template = ImageCarouselTemplate(
                 columns=[
                     ImageCarouselColumn(
-                        image_url=url+'/.6.jpg',
+                        image_url=url+'b6.jpg',
                         action=URIAction(
                             label='查看天氣預報',
                             uri='https://www.cwa.gov.tw/V8/C/'
                         )
                     ),
                     ImageCarouselColumn(
-                        image_url=url+'/.5.jpg',
+                        image_url=url+'/b5.jpg',
                         action=URIAction(
                             label='颱風會來嗎',
                             uri='https://www.ettoday.net/news/focus/%E7%94%9F%E6%B4%BB/%E6%B0%A3%E8%B1%A1/'
                         )
                     ),
                     ImageCarouselColumn(
-                        image_url=url+'/.4.jpg',
+                        image_url=url+'/b4.jpg',
                         action=URIAction(
                             label='明天天氣如何',
                             uri='https://www.cwa.gov.tw/V8/C/W/week.html'
                         )
                     ),
                     ImageCarouselColumn(
-                        image_url=url+'/.3.jpg',
+                        image_url=url+'/b3.jpg',
                         action=URIAction(
                             label='天氣晴嗎',
                             uri='https://www.data.jma.go.jp/multi/yoho/kanto.html?forecast=weather0&lang=cn_zt'
                         )
                     ),
                     ImageCarouselColumn(
-                        image_url=url+'/.2.jpg',
+                        image_url=url+'/b2.jpg',
                         action=URIAction(
                             label='點我查閱天氣',
                             uri='https://www.cwa.gov.tw/V8/C/W/County/County.html?CID=67'
                         )
                     ),
                     ImageCarouselColumn(
-                        image_url=url+'/.1.jpg',
+                        image_url=url+'/b1.jpg',
                         action=URIAction(
                             label='這禮拜天氣',
                             uri='https://tw.news.yahoo.com/weather/%E8%87%BA%E7%81%A3/%E8%87%BA%E5%8C%97%E5%B8%82/%E8%87%BA%E5%8C%97%E5%B8%82-2306179'
